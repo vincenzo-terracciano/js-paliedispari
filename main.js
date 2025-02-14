@@ -14,9 +14,17 @@ function palindroma(word) {
 const userPalin = prompt("Inserisci una parola");
 const isPalin = palindroma(userPalin);
 
-if (isPalin == userPalin) {
+let string = "";
+for (let i = 0; i < isPalin.length; i++) {
+    string += isPalin[i]
+}
+console.log(string);
+
+
+if (string == userPalin) {
     console.log(`${userPalin} è una parola palindroma`);
 } else {
     console.log(`${userPalin} non è una parola palindroma`);
 }
+
 
